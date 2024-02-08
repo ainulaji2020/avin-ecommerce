@@ -1,0 +1,29 @@
+body{
+    background-color: #f4f5f5;
+}
+.countainer{
+    width: 1300px;
+
+}
+
+.navbar-link li a {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100px;
+    display: inline-block;
+    color: #9b9ba5;
+    text-align: center;
+}
+
+.navbar-link li {
+    display: inline;
+}
+
+.navbar-link li a:hover{
+    background-color: #ec7869;
+    color: #fef9f8;
+}
+
+.font-icons{
+    color: #6f6c80;
+}
