@@ -33,3 +33,170 @@ body{
 .font-icons{
     color: #6f6c80;
 }
+
+.range-input {
+    -webkit-appearance: none;
+    appearance: none; 
+    width: 85%;
+    cursor: pointer;
+    outline: none;
+    border-radius: 15px;
+    height: 8px;
+    background: #ccc;
+  }
+  
+  .range-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none; 
+    height: 20px;
+    width: 20px;
+    background-color: #f50;
+    border-radius: 50%;
+    border: none;
+    transition: .2s ease-in-out;
+  }
+  
+  .range-input::-moz-range-thumb {
+    height: 20px;
+    width: 20px;
+    background-color: #f50;
+    border-radius: 50%;
+    border: none;
+    transition: .2s ease-in-out;
+  }
+  
+  .range-input::-webkit-slider-thumb:hover {
+    box-shadow: 0 0 0 10px rgba(255,85,0, .1)
+  }
+  .range-input:active::-webkit-slider-thumb {
+    box-shadow: 0 0 0 13px rgba(255,85,0, .2)
+  }
+  .range-input:focus::-webkit-slider-thumb {
+    box-shadow: 0 0 0 13px rgba(255,85,0, .2)
+  }
+  
+  .range-input::-moz-range-thumb:hover {
+    box-shadow: 0 0 0 10px rgba(255,85,0, .1)
+  }
+  .range-input:active::-moz-range-thumb {
+    box-shadow: 0 0 0 13px rgba(255,85,0, .2)
+  }
+  .range-input:focus::-moz-range-thumb {
+    box-shadow: 0 0 0 13px rgba(255,85,0, .2)    
+  }
+  
+  .value2, .value3, .value4 {
+    font-size: 26px;    
+    width: 50px;
+    text-align: center;
+  }
+
+    .cardItem {
+        display: none;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+        transition: opacity 0.3s ease; /* Tambahkan transisi untuk efek yang lebih mulus */
+    }
+
+    .cards:hover .cardItem {
+        height: 200px;
+        display: block;
+        opacity: 0.4;
+        background-color: #fff;
+    }
+
+    .img-contain {
+        transition: filter 0.5s ease; /* Tambahkan transisi untuk efek yang lebih halus */
+    }
+    
+    .cards:hover .img-contain {
+        width: 8px;
+        border-radius: 5px;
+        filter: blur(60px); /* Blur gambar saat dihover */
+    }
+
+
+    /* scrool sidebar */
+    .custom-scroll::-webkit-scrollbar {
+      width: 5px; /* Atur lebar scrollbar */
+    }
+
+    /* Warna latar belakang scrollbar */
+    .custom-scroll::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    /* Warna bagian merah jambu pada scrollbar */
+    .custom-scroll::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+    /* Warna hover pada scrollbar */
+    .custom-scroll::-webkit-scrollbar-thumb:hover {
+        background: #a49a9a;
+    }
+
+    /* radio-custom */
+    .filter-size-wrap:has(.filter-size:checked) {
+      background-color:#ec7869;
+      color:#fff;
+      text-align: center;
+    }
+
+    /* sidebaracoordion */
+    .accordion {
+      /* background-color: #eee; */
+      color: #444;
+      cursor: pointer;
+      padding: 10px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      transition: 0.4s;
+    }
+    
+    .active, .accordion:hover {
+      /* background-color: #ccc; */
+    }
+    
+    .accordion:after {
+      content: '';
+      color: #777;
+      font-weight: bold;
+      float: right;
+      margin-left: 5px;
+    }
+    
+    .active:after {
+      content: "";
+    }
+    
+    .panel {
+      padding: 0 18px;
+      /* background-color: white; */
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+    }
+
+    /* pagination */
+    .pagination-btn {
+      padding: 0.5rem 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 100%;
+      color: #ede8e8;
+      transition: background-color 0.3s ease;
+  }
+
+  .pagination-btn:hover {
+        background-color: #f0f0f0;
+    }
+  .pagination-btn.active{
+    background-color:#e24733;
+  }
+
+

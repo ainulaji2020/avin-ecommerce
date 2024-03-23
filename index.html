@@ -57,12 +57,15 @@
                 </div>
                 <div class="">
                     <a class="relative" href="">
-                        <div style="color: #fff; background-color: #ec7869;" class="text-xs flex justify-center items-center absolute right-0 top-0 w-5 h-5 -mr-3.5 -mt-3.5 rounded-full bg-blue-300">4</div>
+                        <div style="color: #fff; background-color: #ec7869;"
+                            class="text-xs flex justify-center items-center absolute right-0 top-0 w-5 h-5 -mr-3.5 -mt-3.5 rounded-full bg-blue-300">
+                            4</div>
                         <i class="fa fa-shopping-cart font-icons text-2xl"></i>
                     </a>
                 </div>
                 <div class="relative">
-                    <div style="color: #fff; background-color: #6f6c80;" class="text-sm flex justify-center items-center absolute right-0 inset-y-0 w-5 h-5 pb-1 my-auto -mr-2 rounded-full bg-blue-300">
+                    <div style="color: #fff; background-color: #6f6c80;"
+                        class="text-sm flex justify-center items-center absolute right-0 inset-y-0 w-5 h-5 pb-1 my-auto -mr-2 rounded-full bg-blue-300">
                         <i class="fa fa-sort-down"></i>
                     </div>
                     <div class="w-12 h-12 rounded-full shadow-xl items-center">
@@ -72,306 +75,1025 @@
             </div>
         </nav>
         <!-- contect filter -->
-        <div class="bg-white h-32">
-            content filter
+        <div class="bg-white h-44 grid grid-cols-4">
+            <div class="py-2">
+                <p class="py-4 text-lg px-8" style="color: #545454;">Color</p>
+                <div class="px-8 h-20 border-r-2 flex text-center items-center gap-3.5">
+                    <div class="h-5 w-5 rounded-full" style="background-color: #aa5446;"></div>
+                    <div class="h-5 w-5 rounded-full" style="background-color: #545454;"></div>
+                    <div class="h-5 w-5 rounded-full" style="background-color:#70d5ea ;"></div>
+                    <div class="h-5 w-5 border-2 rounded-full" style="background-color:#fff ;"></div>
+                    <div class="h-5 w-5 rounded-full" style="background-color: #f2dc37;"></div>
+                    <div class="flex justify-center items-center h-5 w-5 rounded-full"
+                        style="background-color:#46aa5e ;">
+                        <i class="fa fa-check text-xs text-white" aria-hidden="true"></i>
+                    </div>
+                    <div class="flex justify-center items-center h-5 w-5 rounded-full"
+                        style="background-color: #e3e3e9; color: #6f6c80;">
+                        <a href=""><i class="fa fa-times text-sm" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="py-2">
+                <p class="py-4 text-lg px-8" style="color: #545454;">Size</p>
+                <div class="px-8 h-20 border-r-2 flex text-xs text-center items-center gap-x-2 hover:text-300"
+                    style="color: #6f6c80;">
+                    <button
+                        class="p-4 relative bg-white w-4 h-4 border-2 flex items-center justify-center filter-size-wrap">
+                        <p class="text-center">XS</p>
+                        <input class="bg-blue-300 filter-size w-full h-full opacity-0 absolute inset-0 z-10"
+                            type="radio" name="filter-size">
+                    </button>
+                    <button
+                        class="p-4 relative bg-white w-4 h-4 border-2 flex items-center justify-center filter-size-wrap">
+                        <p class="text-center">S</p>
+                        <input class="bg-blue-300 filter-size w-full h-full opacity-0 absolute inset-0 z-10"
+                            type="radio" name="filter-size">
+                    </button>
+                    <button
+                        class="p-4 relative bg-white w-4 h-4 border-2 flex items-center justify-center filter-size-wrap">
+                        <p class="text-center">M</p>
+                        <input class="bg-blue-300 filter-size w-full h-full opacity-0 absolute inset-0 z-10"
+                            type="radio" name="filter-size">
+                    </button>
+                    <button
+                        class="p-4 relative bg-white w-4 h-4 border-2 flex items-center justify-center filter-size-wrap">
+                        <p class="text-center">L</p>
+                        <input class="bg-blue-300 filter-size w-full h-full opacity-0 absolute inset-0 z-10"
+                            type="radio" name="filter-size">
+                    </button>
+                    <button
+                        class="p-4 relative bg-white w-4 h-4 border-2 flex items-center justify-center filter-size-wrap">
+                        <p class="text-center">XL</p>
+                        <input class="bg-blue-300 filter-size w-full h-full opacity-0 absolute inset-0 z-10"
+                            type="radio" name="filter-size">
+                    </button>
+                    <div class="flex justify-center items-center h-5 w-5 my-1 p-3 border-2 rounded-full">
+                        <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="py-2">
+                <p class="py-4 text-lg px-8" style="color: #545454;">Price</p>
+                <div class="px-8 h-20 border-r-2  text-center flex justify-center flex-col gap-y-2">
+                    <div class="range flex items-center">
+                        <input type="range" min="100" max="1000" value="0" id="range2" class="range-input w-full" />
+                        <div class="value2 hidden">0</div>
+                    </div>
+                    <div class="flex justify-between text-sm hover:text-color" style="color: #545454;">
+                        <div>$100</div>
+                        <div>$500</div>
+                        <div>$1000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="py-2">
+                <p class="py-4 text-lg px-8" style="color: #545454;">Sort By</p>
+                <div class="px-8 h-20 flex text-center items-center gap-4">
+                    <div class="relative inline-block text-left">
+                        <div class="w-40">
+                            <button type="button"
+                                class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-4 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+                                id="menu-button" aria-expanded="true" aria-haspopup="true">
+                                Latest
+                                <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="hidden absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                            role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                            <div class="py-1 " role="none">
+                                <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                                <a href="#" class="text-gray-700 block px-4 py-2 text-sm hover:bg-orange-300"
+                                    role="menuitem" tabindex="-1" id="menu-item-0">Long-sleeved clothes</a>
+                                <a href="#" class="text-gray-700 block px-4 py-2 text-sm hover:bg-orange-300"
+                                    role="menuitem" tabindex="-1" id="menu-item-1">Shorts</a>
+                                <a href="#" class="text-gray-700 block px-4 py-2 text-sm hover:bg-orange-300"
+                                    role="menuitem" tabindex="-1" id="menu-item-2">Sweater</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-4 text-lg">
+                        <div class="h-12 w-12 bg-orange-500 rounded-full my-4 text-white py-3">
+                            <i class="fa-solid fa fa-arrow-right justify-center items-center"></i>
+                        </div>
+                        <div class="h-12 w-12 bg-gray-300 rounded-full my-4 py-3 text-gray-600">
+                            <i class="fa fa-refresh" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- sidebar kiri-->
-        <div class="my-8 flex items-start gap-x-7 ">
-            <div class="w-1/4 bg-white shadow-lg rounded-lg pb-12">
+        <div class="my-8 flex gap-x-7 items-start">
+            <div class="flex flex-col h-96 w-1/4 bg-white shadow-lg rounded-lg">
                 <p class="text-center pt-10 pb-8 text-xl" style="color: #ec7869;">SHOP BY CATEGORY</p>
-                <button class="w-full text-left pb-3 flex items-center px-6">
-                    <i class="fa fa-sort-down pb-1 pr-4" style="color: #6f6c80;"></i>
-                    <span class="text-lg" style="color:#6f6c80"> Tops</span>
-                </button>
-                <button class="w-full text-left pb-3 flex items-center px-6">
-                    <i class="fa fa-sort-down pb-1 pr-4" style="color: #6f6c80;"></i>
-                    <span class="text-lg" style="color:#6f6c80"> KnitWear</span>
-                </button>
-               
-                <button class="w-full text-left pb-3 flex items-center px-6">
-                    <i class="fa fa-sort-down pb-1 pr-4" style="color: #6f6c80;"></i>
-                    <span class="text-lg" style="color:#6f6c80"> Dresses</span>
-                </button>
-                <button class="w-full text-left pb-3 flex items-center px-6">
-                    <i class="fa fa-sort-down pb-1 pr-4" style="color: #6f6c80;"></i>
-                    <span class="text-lg" style="color:#6f6c80"> Maxi Dresses</span>
-                </button>
-                <button class="w-full text-left pb-3 flex items-center px-6">
-                    <i class="fa fa-sort-down pb-1 pr-4" style="color: #6f6c80;"></i>
-                    <span class="text-lg" style="color:#6f6c80"> Trousers</span>
-                </button>
-                <button class="w-full text-left pb-3 flex items-center px-6">
-                    <i class="fa fa-sort-down pb-1 pr-4" style="color: #6f6c80;"></i>
-                    <span class="text-lg" style="color:#6f6c80"> Jeans</span>
-                </button>
-                <button class="w-full text-left pb-3 flex items-center px-6">
-                    <i class="fa fa-sort-down pb-1 pr-4" style="color: #6f6c80;"></i>
-                    <span class="text-lg" style="color:#6f6c80"> Blazers</span>
-                </button>
-                <button class="w-full text-left pb-3 flex items-center px-6">
-                    <i class="fa fa-sort-down pb-1 pr-4" style="color: #6f6c80;"></i>
-                    <span class="text-lg" style="color:#6f6c80"> Lingerie</span>
-                </button>
-               
+                <div class="custom-scroll overflow-y-auto flex-1 h-full">
+                    <div class="relative">
+                        <button class="accordion flex items-center gap-x-2 px-6 hover:text-orange-600">
+                            <span class="-mt-2"><i class="fa fa-sort-down"></i></span>
+                            Tops
+                        </button>
+                        <div class="panel flex flex-col px-14 gap-y-2.5">
+                            <a href="#" class="hover:text-orange-600">Nike</a>
+                            <a href="#" class="hover:text-orange-600">La</a>
+                        </div>
+                        <button class="accordion flex items-center gap-x-2 px-6 hover:text-orange-600">
+                            <span class="-mt-2"><i class="fa fa-sort-down"></i></span>
+                            Shith and blous
+                        </button>
+                        <div class="panel flex flex-col px-14 gap-y-2.5">
+                            <a href="#" class="hover:text-orange-600">Bassic</a>
+                            <a href="#" class="hover:text-orange-600">Cardigant</a>
+                            <a href="#" class="hover:text-orange-600">Hoodies</a>
+                        </div>
+                        <button class="accordion flex items-center gap-x-2 px-6 hover:text-orange-600">
+                            <span class="-mt-2"><i class="fa fa-sort-down"></i></span>
+                            KnitWear
+                        </button>
+                        <div class="panel flex flex-col px-14 gap-y-2.5">
+                            <a href="#" class="hover:text-orange-600">Nike</a>
+                            <a href="#" class="hover:text-orange-600">La</a>
+                        </div>
+                        <button class="accordion flex items-center gap-x-2 px-6 hover:text-orange-600">
+                            <span class="-mt-2"><i class="fa fa-sort-down"></i></span>
+                            Dresses
+                        </button>
+                        <div class="panel flex flex-col px-14 gap-y-2.5">
+                            <a href="#" class="hover:text-orange-600">Shoort Dresses</a>
+                            <a href="#" class="hover:text-orange-600">Midi Dresses</a>
+                            <a href="#" class="hover:text-orange-600">Bodycon</a>
+                            <a href="#" class="hover:text-orange-600">Party Dresses</a>
+                            <a href="#" class="hover:text-orange-600">Maxi Dresses</a>
+                        </div>
+                        <button class="accordion flex items-center gap-x-2 px-6 hover:text-orange-600">
+                            <span class="-mt-2"><i class="fa fa-sort-down"></i></span>
+                            Maxi Dresses
+                        </button>
+                        <div class="panel flex flex-col px-14 gap-y-2.5">
+                            <a href="#" class="hover:text-orange-600">Skirts</a>
+                        </div>
+                        <button class="accordion flex items-center gap-x-2 px-6 hover:text-orange-600">
+                            <span class="-mt-2"><i class="fa fa-sort-down"></i></span>
+                            Trousers
+                        </button>
+                        <div class="panel flex flex-col px-14 gap-y-2.5">
+                            <a href="#" class="hover:text-orange-600">Jumpsuit</a>
+                        </div>
+                        <button class="accordion flex items-center gap-x-2 px-6 hover:text-orange-600">
+                            <span class="-mt-2"><i class="fa fa-sort-down"></i></span>
+                            Jeans
+                        </button>
+                        <div class="panel flex flex-col px-14 gap-y-2.5">
+                            <a href="#" class="hover:text-orange-600">OutWaer</a>
+                        </div>
+                        <button class="accordion flex items-center gap-x-2 px-6 hover:text-orange-600">
+                            <span class="-mt-2"><i class="fa fa-sort-down"></i></span>
+                            Blazers
+                        </button>
+                        <div class="panel flex flex-col px-14 gap-y-2.5">
+                            <a href="#" class="hover:text-orange-600">Shorts</a>
+                        </div>
+                        <button class="accordion flex items-center gap-x-2 px-6 hover:text-orange-600">
+                            <span class="-mt-2"><i class="fa fa-sort-down"></i></span>
+                            Lingerie
+                        </button>
+                        <div class="panel flex flex-col px-14 gap-y-2.5">
+                            <a href="#" class="hover:text-orange-600">Socks & Tight</a>
+                            <a href="#" class="hover:text-orange-600">Nightwaer & Loungwaer</a>
+                            <a href="#" class="hover:text-orange-600">Accessories</a>
+                            <a href="#" class="hover:text-orange-600">Bags</a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- contect sidebar -->
-            <div class="w-3/4 grid grid-cols-3 gap-8">
-                <div class="bg-white flex flex-col rounded-lg shadow-lg">
-                    <p class="pt-8 pb-2 text-center">Lace V-neck Dress</p>
-                    <p class="font-bold pb-2 text-center">$234</p>
-                    <div class="flex justify-center gap-x-1">
-                        <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
-                    </div>
-                    <div class="flex justify-center items-center gap-x-3 pt-3">
-                        <div class="h-3 w-3 rounded-full" style="background-color: #545454;"></div>
-                        <div class="h-3 w-3 rounded-full" style="background-color: #7d7d7d;"></div>
-                        <div class="h-3 w-3 rounded-full" style="background-color: #c7c7c7;"></div>
-                        <div class="h-3 w-3 rounded-full" style="background-color: #4693aa;"></div>
-                    </div>
-                    <div class="py-8 mx-auto relative px-5">
-                        <img src="https://picsum.photos/300/350" class="rounded-sm object-cover h-full" alt="">
-                        <button class="w-20 h-10 absolute bottom-0 mb-8 text-white" style="background-color: #706478;">-$50</button>
-                    </div>
-                </div>
-                <div class="bg-white flex flex-col rounded-lg shadow-lg">
-                    <p class="pt-8 pb-2 text-center">Lace V-neck Dress</p>
-                    <p class="font-bold pb-2 text-center">$234</p>
-                    <div class="flex justify-center gap-x-1">
-                        <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
-                    </div>
-                    <div class="flex justify-center items-center gap-x-3 pt-3">
-                        <div class="h-3 w-3 rounded-full" style="background-color: #545454;"></div>
-                        <div class="h-3 w-3 rounded-full" style="background-color: #7d7d7d;"></div>
-                        <div class="h-3 w-3 rounded-full" style="background-color: #c7c7c7;"></div>
-                        <div class="h-3 w-3 rounded-full" style="background-color: #4693aa;"></div>
-                    </div>
-                    <div class="py-8 mx-auto relative px-5">
-                        <img src="https://picsum.photos/300/350" class="rounded-sm object-cover h-full" alt="">
-                        <button class="w-20 h-10 absolute bottom-0 mb-8 text-white" style="background-color: #706478;">-$50</button>
-                    </div>
-                </div>
-                <div class="bg-white flex flex-col rounded-lg shadow-lg">
-                    <p class="pt-8 pb-2 text-center">Lace V-neck Dress</p>
-                    <p class="font-bold pb-2 text-center">$234</p>
-                    <div class="flex justify-center gap-x-1">
-                        <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
-                    </div>
-                    <div class="flex justify-center items-center gap-x-3 pt-3">
-                        <div class="h-3 w-3 rounded-full" style="background-color: #545454;"></div>
-                        <div class="h-3 w-3 rounded-full" style="background-color: #7d7d7d;"></div>
-                        <div class="h-3 w-3 rounded-full" style="background-color: #c7c7c7;"></div>
-                        <div class="h-3 w-3 rounded-full" style="background-color: #4693aa;"></div>
-                    </div>
-                    <div class="py-8 mx-auto relative px-5">
-                        <img src="https://picsum.photos/300/350" class="rounded-sm object-cover h-full" alt="">
-                        <button class="w-20 h-10 absolute bottom-0 mb-8 text-white" style="background-color: #706478;">-$50</button>
-                    </div>
-                </div>
-                <div class="bg-white flex flex-col rounded-lg shadow-lg">
-                    <p class="pt-8 pb-2 text-center">Lace V-neck Dress</p>
-                    <p class="font-bold pb-2 text-center">$234</p>
-                    <div class="flex justify-center gap-x-1">
-                        <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
-                    </div>
-                    <div class="flex justify-center items-center gap-x-3 pt-3">
-                        <div class="h-3 w-3 rounded-full" style="background-color: #545454;"></div>
-                        <div class="h-3 w-3 rounded-full" style="background-color: #7d7d7d;"></div>
-                        <div class="h-3 w-3 rounded-full" style="background-color: #c7c7c7;"></div>
-                        <div class="h-3 w-3 rounded-full" style="background-color: #4693aa;"></div>
-                    </div>
-                    <div class="py-8 mx-auto relative px-5">
-                        <img src="https://picsum.photos/300/350" class="rounded-sm object-cover h-full" alt="">
-                        <button class="w-20 h-10 absolute bottom-0 mb-8 text-white" style="background-color: #706478;">-$50</button>
+            <div class=" w-3/4 grid grid-cols-3 gap-8">
+                <div class="bg-white cards flex flex-col rounded-lg shadow-lg">
+                    <div class="relative">
+                        <p class="pt-8 pb-2 text-center">Lace V-neck Dress</p>
+                        <p class="font-bold pb-2 text-center">$234</p>
+                        <div class="flex justify-center gap-x-1">
+                            <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
+                        </div>
+                        <div class="flex justify-center items-center gap-x-3 pt-3">
+                            <div class="h-3 w-3 rounded-full" style="background-color: #545454;"></div>
+                            <div class="h-3 w-3 rounded-full" style="background-color: #7d7d7d;"></div>
+                            <div class="h-3 w-3 rounded-full" style="background-color: #c7c7c7;"></div>
+                            <div class="h-3 w-3 rounded-full" style="background-color: #4693aa;"></div>
+                        </div>
+                        <div class=" py-8 mx-auto relative px-5 overflow-hidden" style="width: 300px; height: 370px;">
+                            <div class="cardItem relative items-center">
+                                <div class="py-2 px-8 flex text-xs text-center text-gray-900 justify-items-center gap-2 hover:text-300"
+                                    style="color: #6f6c80;">
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">XS</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">S</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">M</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">XL</a>
+                                    </div>
+                                </div>
+                                <div class="flex justify-center gap-6 py-12 text-orange-600">
+                                    <div class="w-12 h-12 bg-orange-100 rounded-full">
+                                        <i class="fa fas fa-heart flex justify-center justify-items-center text-2xl py-2"></i>
+                                    </div>
+                                    <div class="w-12 h-12 bg-orange-100 rounded-full">
+                                        <i class="fa-solid fa fa-eye flex justify-center justify-items-center text-2xl py-2"></i>
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <button
+                                        class="w-56 mx-auto text-white text-center justify-items-center align-items-center flex w-10 h-10 rounded-full"
+                                        style="background-color: #e6731b;">
+                                        <i class="fa fa-shopping-cart font-icons text-white text-2xl py-1 pl-6"></i>
+                                        <p class="text-center py-2 px-8">Add to Cart</p>
+                                    </button>
+                                </div>
+                            </div>
+                            <img src="https://picsum.photos/300/350" class="rounded-sm object-cover img-contain"
+                                style="max-width: 100%; max-height: 100%;" alt="">
+                        </div>
+                        <button class="w-20 h-10 absolute bottom-0 mb-6 text-white px-6 text-sm"
+                            style="background-color:#7d7a8cc9">-$ 50</button>
                     </div>
                 </div>
-                <div class="bg-white flex flex-col rounded-lg shadow-lg">
-                    <p class="pt-8 pb-2 text-center">Lace V-neck Dress</p>
-                    <p class="font-bold pb-2 text-center">$234</p>
-                    <div class="flex justify-center gap-x-1">
-                        <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
-                    </div>
-                    <div class="flex justify-center items-center gap-x-3 pt-3">
-                        <div class="h-3 w-3 rounded-full" style="background-color: #545454;"></div>
-                        <div class="h-3 w-3 rounded-full" style="background-color: #7d7d7d;"></div>
-                        <div class="h-3 w-3 rounded-full" style="background-color: #c7c7c7;"></div>
-                        <div class="h-3 w-3 rounded-full" style="background-color: #4693aa;"></div>
-                    </div>
-                    <div class="py-8 mx-auto relative px-5">
-                        <img src="https://picsum.photos/300/350" class="rounded-sm object-cover h-full" alt="">
-                        <button class="w-20 h-10 absolute bottom-0 mb-8 text-white" style="background-color: #706478;">-$50</button>
-                    </div>
-                </div>
-                <div class="bg-white flex flex-col rounded-lg shadow-lg">
-                    <p class="pt-8 pb-2 text-center">Lace V-neck Dress</p>
-                    <p class="font-bold pb-2 text-center">$234</p>
-                    <div class="flex justify-center gap-x-1">
-                        <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
-                    </div>
-                    <div class="flex justify-center items-center gap-x-3 pt-3">
-                        <div class="h-3 w-3 rounded-full" style="background-color: #545454;"></div>
-                        <div class="h-3 w-3 rounded-full" style="background-color: #7d7d7d;"></div>
-                        <div class="h-3 w-3 rounded-full" style="background-color: #c7c7c7;"></div>
-                        <div class="h-3 w-3 rounded-full" style="background-color: #4693aa;"></div>
-                    </div>
-                    <div class="py-8 mx-auto relative px-5">
-                        <img src="https://picsum.photos/300/350" class="rounded-sm object-cover h-full" alt="">
-                        <button class="w-20 h-10 absolute bottom-0 mb-8 text-white" style="background-color: #706478;">-$50</button>
-                    </div>
-                </div>
-                <div class="bg-white flex flex-col rounded-lg shadow-lg">
-                    <p class="pt-8 pb-2 text-center">Lace V-neck Dress</p>
-                    <p class="font-bold pb-2 text-center">$234</p>
-                    <div class="flex justify-center gap-x-1">
-                        <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
-                    </div>
-                    <div class="flex justify-center items-center gap-x-3 pt-3">
-                        <div class="h-3 w-3 rounded-full" style="background-color: #545454;"></div>
-                        <div class="h-3 w-3 rounded-full" style="background-color: #7d7d7d;"></div>
-                        <div class="h-3 w-3 rounded-full" style="background-color: #c7c7c7;"></div>
-                        <div class="h-3 w-3 rounded-full" style="background-color: #4693aa;"></div>
-                    </div>
-                    <div class="py-8 mx-auto relative px-5">
-                        <img src="https://picsum.photos/300/350" class="rounded-sm object-cover h-full" alt="">
-                        <button class="w-20 h-10 absolute bottom-0 mb-8 text-white" style="background-color: #706478;">-$50</button>
-                    </div>
-                </div>
-                <div class="bg-white flex flex-col rounded-lg shadow-lg">
-                    <p class="pt-8 pb-2 text-center">Lace V-neck Dress</p>
-                    <p class="font-bold pb-2 text-center">$234</p>
-                    <div class="flex justify-center gap-x-1">
-                        <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
-                    </div>
-                    <div class="flex justify-center items-center gap-x-3 pt-3">
-                        <div class="h-3 w-3 rounded-full" style="background-color: #545454;"></div>
-                        <div class="h-3 w-3 rounded-full" style="background-color: #7d7d7d;"></div>
-                        <div class="h-3 w-3 rounded-full" style="background-color: #c7c7c7;"></div>
-                        <div class="h-3 w-3 rounded-full" style="background-color: #4693aa;"></div>
-                    </div>
-                    <div class="py-8 mx-auto relative px-5">
-                        <img src="https://picsum.photos/300/350" class="rounded-sm object-cover h-full" alt="">
-                        <button class="w-20 h-10 absolute bottom-0 mb-8 text-white" style="background-color: #706478;">-$50</button>
+                <div class="bg-white cards flex flex-col rounded-lg shadow-lg">
+                    <div class="relative">
+                        <p class="pt-8 pb-2 text-center">Lace V-neck Dress</p>
+                        <p class="font-bold pb-2 text-center">$234</p>
+                        <div class="flex justify-center gap-x-1">
+                            <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
+                        </div>
+                        <div class="flex justify-center items-center gap-x-3 pt-3">
+                            <div class="h-3 w-3 rounded-full" style="background-color: #545454;"></div>
+                            <div class="h-3 w-3 rounded-full" style="background-color: #7d7d7d;"></div>
+                            <div class="h-3 w-3 rounded-full" style="background-color: #c7c7c7;"></div>
+                            <div class="h-3 w-3 rounded-full" style="background-color: #4693aa;"></div>
+                        </div>
+                        <div class=" py-8 mx-auto relative px-5 overflow-hidden" style="width: 300px; height: 370px;">
+                            <div class="cardItem relative items-center">
+                                <div class="py-2 px-8 flex text-xs text-center text-gray-900 justify-items-center gap-2 hover:text-300"
+                                    style="color: #6f6c80;">
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">XS</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">S</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">M</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">XL</a>
+                                    </div>
+                                </div>
+                                <div class="flex justify-center gap-6 py-12 text-orange-600">
+                                    <div class="w-12 h-12 bg-orange-100 rounded-full">
+                                        <i class="fa fas fa-heart flex justify-center justify-items-center text-2xl py-2"></i>
+                                    </div>
+                                    <div class="w-12 h-12 bg-orange-100 rounded-full">
+                                        <i class="fa-solid fa fa-eye flex justify-center justify-items-center text-2xl py-2"></i>
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <button
+                                        class="w-56 mx-auto text-white text-center justify-items-center align-items-center flex w-10 h-10 rounded-full"
+                                        style="background-color: #e6731b;">
+                                        <i class="fa fa-shopping-cart font-icons text-white text-2xl py-1 pl-6"></i>
+                                        <p class="text-center py-2 px-8">Add to Cart</p>
+                                    </button>
+                                </div>
+                            </div>
+                            <img src="https://picsum.photos/300/350" class="rounded-sm object-cover img-contain"
+                                style="max-width: 100%; max-height: 100%;" alt="">
+                        </div>
+                        <button class="w-20 h-10 absolute bottom-0 mb-6 text-white px-6 text-sm"
+                            style="background-color:#7d7a8cc9">-$ 50</button>
                     </div>
                 </div>
-                <div class="bg-white flex flex-col rounded-lg shadow-lg">
-                    <p class="pt-8 pb-2 text-center">Lace V-neck Dress</p>
-                    <p class="font-bold pb-2 text-center">$234</p>
-                    <div class="flex justify-center gap-x-1">
-                        <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
-                    </div>
-                    <div class="flex justify-center items-center gap-x-3 pt-3">
-                        <div class="h-3 w-3 rounded-full" style="background-color: #545454;"></div>
-                        <div class="h-3 w-3 rounded-full" style="background-color: #7d7d7d;"></div>
-                        <div class="h-3 w-3 rounded-full" style="background-color: #c7c7c7;"></div>
-                        <div class="h-3 w-3 rounded-full" style="background-color: #4693aa;"></div>
-                    </div>
-                    <div class="py-8 mx-auto relative px-5">
-                        <img src="https://picsum.photos/300/350" class="rounded-sm object-cover h-full" alt="">
-                        <button class="w-20 h-10 absolute bottom-0 mb-8 text-white" style="background-color: #706478;">-$50</button>
+                <div class="bg-white cards flex flex-col rounded-lg shadow-lg">
+                    <div class="relative">
+                        <p class="pt-8 pb-2 text-center">Lace V-neck Dress</p>
+                        <p class="font-bold pb-2 text-center">$234</p>
+                        <div class="flex justify-center gap-x-1">
+                            <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
+                        </div>
+                        <div class="flex justify-center items-center gap-x-3 pt-3">
+                            <div class="h-3 w-3 rounded-full" style="background-color: #545454;"></div>
+                            <div class="h-3 w-3 rounded-full" style="background-color: #7d7d7d;"></div>
+                            <div class="h-3 w-3 rounded-full" style="background-color: #c7c7c7;"></div>
+                            <div class="h-3 w-3 rounded-full" style="background-color: #4693aa;"></div>
+                        </div>
+                        <div class=" py-8 mx-auto relative px-5 overflow-hidden" style="width: 300px; height: 370px;">
+                            <div class="cardItem relative items-center">
+                                <div class="py-2 px-8 flex text-xs text-center text-gray-900 justify-items-center gap-2 hover:text-300"
+                                    style="color: #6f6c80;">
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">XS</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">S</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">M</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">XL</a>
+                                    </div>
+                                </div>
+                                <div class="flex justify-center gap-6 py-12 text-orange-600">
+                                    <div class="w-12 h-12 bg-orange-100 rounded-full">
+                                        <i class="fa fas fa-heart flex justify-center justify-items-center text-2xl py-2"></i>
+                                    </div>
+                                    <div class="w-12 h-12 bg-orange-100 rounded-full">
+                                        <i class="fa-solid fa fa-eye flex justify-center justify-items-center text-2xl py-2"></i>
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <button
+                                        class="w-56 mx-auto text-white text-center justify-items-center align-items-center flex w-10 h-10 rounded-full"
+                                        style="background-color: #e6731b;">
+                                        <i class="fa fa-shopping-cart font-icons text-white text-2xl py-1 pl-6"></i>
+                                        <p class="text-center py-2 px-8">Add to Cart</p>
+                                    </button>
+                                </div>
+                            </div>
+                            <img src="https://picsum.photos/300/350" class="rounded-sm object-cover img-contain"
+                                style="max-width: 100%; max-height: 100%;" alt="">
+                        </div>
+                        <button class="w-20 h-10 absolute bottom-0 mb-6 text-white px-6 text-sm"
+                            style="background-color:#7d7a8cc9">-$ 50</button>
                     </div>
                 </div>
-                <div class="bg-white flex flex-col rounded-lg shadow-lg">
-                    <p class="pt-8 pb-2 text-center">Lace V-neck Dress</p>
-                    <p class="font-bold pb-2 text-center">$234</p>
-                    <div class="flex justify-center gap-x-1">
-                        <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
-                    </div>
-                    <div class="flex justify-center items-center gap-x-3 pt-3">
-                        <div class="h-3 w-3 rounded-full" style="background-color: #545454;"></div>
-                        <div class="h-3 w-3 rounded-full" style="background-color: #7d7d7d;"></div>
-                        <div class="h-3 w-3 rounded-full" style="background-color: #c7c7c7;"></div>
-                        <div class="h-3 w-3 rounded-full" style="background-color: #4693aa;"></div>
-                    </div>
-                    <div class="py-8 mx-auto relative px-5">
-                        <img src="https://picsum.photos/300/350" class="rounded-sm object-cover h-full" alt="">
-                        <button class="w-20 h-10 absolute bottom-0 mb-8 text-white" style="background-color: #706478;">-$50</button>
+                <div class="bg-white cards flex flex-col rounded-lg shadow-lg">
+                    <div class="relative">
+                        <p class="pt-8 pb-2 text-center">Lace V-neck Dress</p>
+                        <p class="font-bold pb-2 text-center">$234</p>
+                        <div class="flex justify-center gap-x-1">
+                            <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
+                        </div>
+                        <div class="flex justify-center items-center gap-x-3 pt-3">
+                            <div class="h-3 w-3 rounded-full" style="background-color: #545454;"></div>
+                            <div class="h-3 w-3 rounded-full" style="background-color: #7d7d7d;"></div>
+                            <div class="h-3 w-3 rounded-full" style="background-color: #c7c7c7;"></div>
+                            <div class="h-3 w-3 rounded-full" style="background-color: #4693aa;"></div>
+                        </div>
+                        <div class=" py-8 mx-auto relative px-5 overflow-hidden" style="width: 300px; height: 370px;">
+                            <div class="cardItem relative items-center">
+                                <div class="py-2 px-8 flex text-xs text-center text-gray-900 justify-items-center gap-2 hover:text-300"
+                                    style="color: #6f6c80;">
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">XS</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">S</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">M</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">XL</a>
+                                    </div>
+                                </div>
+                                <div class="flex justify-center gap-6 py-12 text-orange-600">
+                                    <div class="w-12 h-12 bg-orange-100 rounded-full">
+                                        <i class="fa fas fa-heart flex justify-center justify-items-center text-2xl py-2"></i>
+                                    </div>
+                                    <div class="w-12 h-12 bg-orange-100 rounded-full">
+                                        <i class="fa-solid fa fa-eye flex justify-center justify-items-center text-2xl py-2"></i>
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <button
+                                        class="w-56 mx-auto text-white text-center justify-items-center align-items-center flex w-10 h-10 rounded-full"
+                                        style="background-color: #e6731b;">
+                                        <i class="fa fa-shopping-cart font-icons text-white text-2xl py-1 pl-6"></i>
+                                        <p class="text-center py-2 px-8">Add to Cart</p>
+                                    </button>
+                                </div>
+                            </div>
+                            <img src="https://picsum.photos/300/350" class="rounded-sm object-cover img-contain"
+                                style="max-width: 100%; max-height: 100%;" alt="">
+                        </div>
+                        <button class="w-20 h-10 absolute bottom-0 mb-6 text-white px-6 text-sm"
+                            style="background-color:#7d7a8cc9">-$ 50</button>
                     </div>
                 </div>
-                <div class="bg-white flex flex-col rounded-lg shadow-lg">
-                    <p class="pt-8 pb-2 text-center">Lace V-neck Dress</p>
-                    <p class="font-bold pb-2 text-center">$234</p>
-                    <div class="flex justify-center gap-x-1">
-                        <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
-                    </div>
-                    <div class="flex justify-center items-center gap-x-3 pt-3">
-                        <div class="h-3 w-3 rounded-full" style="background-color: #545454;"></div>
-                        <div class="h-3 w-3 rounded-full" style="background-color: #7d7d7d;"></div>
-                        <div class="h-3 w-3 rounded-full" style="background-color: #c7c7c7;"></div>
-                        <div class="h-3 w-3 rounded-full" style="background-color: #4693aa;"></div>
-                    </div>
-                    <div class="py-8 mx-auto relative px-5">
-                        <img src="https://picsum.photos/300/350" class="rounded-sm object-cover h-full" alt="">
-                        <button class="w-20 h-10 absolute bottom-0 mb-8 text-white" style="background-color: #706478;">-$50</button>
+                <div class="bg-white cards flex flex-col rounded-lg shadow-lg">
+                    <div class="relative">
+                        <p class="pt-8 pb-2 text-center">Lace V-neck Dress</p>
+                        <p class="font-bold pb-2 text-center">$234</p>
+                        <div class="flex justify-center gap-x-1">
+                            <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
+                        </div>
+                        <div class="flex justify-center items-center gap-x-3 pt-3">
+                            <div class="h-3 w-3 rounded-full" style="background-color: #545454;"></div>
+                            <div class="h-3 w-3 rounded-full" style="background-color: #7d7d7d;"></div>
+                            <div class="h-3 w-3 rounded-full" style="background-color: #c7c7c7;"></div>
+                            <div class="h-3 w-3 rounded-full" style="background-color: #4693aa;"></div>
+                        </div>
+                        <div class=" py-8 mx-auto relative px-5 overflow-hidden" style="width: 300px; height: 370px;">
+                            <div class="cardItem relative items-center">
+                                <div class="py-2 px-8 flex text-xs text-center text-gray-900 justify-items-center gap-2 hover:text-300"
+                                    style="color: #6f6c80;">
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">XS</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">S</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">M</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">XL</a>
+                                    </div>
+                                </div>
+                                <div class="flex justify-center gap-6 py-12 text-orange-600">
+                                    <div class="w-12 h-12 bg-orange-100 rounded-full">
+                                        <i class="fa fas fa-heart flex justify-center justify-items-center text-2xl py-2"></i>
+                                    </div>
+                                    <div class="w-12 h-12 bg-orange-100 rounded-full">
+                                        <i class="fa-solid fa fa-eye flex justify-center justify-items-center text-2xl py-2"></i>
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <button
+                                        class="w-56 mx-auto text-white text-center justify-items-center align-items-center flex w-10 h-10 rounded-full"
+                                        style="background-color: #e6731b;">
+                                        <i class="fa fa-shopping-cart font-icons text-white text-2xl py-1 pl-6"></i>
+                                        <p class="text-center py-2 px-8">Add to Cart</p>
+                                    </button>
+                                </div>
+                            </div>
+                            <img src="https://picsum.photos/300/350" class="rounded-sm object-cover img-contain"
+                                style="max-width: 100%; max-height: 100%;" alt="">
+                        </div>
+                        <button class="w-20 h-10 absolute bottom-0 mb-6 text-white px-6 text-sm"
+                            style="background-color:#7d7a8cc9">-$ 50</button>
                     </div>
                 </div>
-                <div class="bg-white flex flex-col rounded-lg shadow-lg">
-                    <p class="pt-8 pb-2 text-center">Lace V-neck Dress</p>
-                    <p class="font-bold pb-2 text-center">$234</p>
-                    <div class="flex justify-center gap-x-1">
-                        <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
-                        <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
+                <div class="bg-white cards flex flex-col rounded-lg shadow-lg">
+                    <div class="relative">
+                        <p class="pt-8 pb-2 text-center">Lace V-neck Dress</p>
+                        <p class="font-bold pb-2 text-center">$234</p>
+                        <div class="flex justify-center gap-x-1">
+                            <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
+                        </div>
+                        <div class="flex justify-center items-center gap-x-3 pt-3">
+                            <div class="h-3 w-3 rounded-full" style="background-color: #545454;"></div>
+                            <div class="h-3 w-3 rounded-full" style="background-color: #7d7d7d;"></div>
+                            <div class="h-3 w-3 rounded-full" style="background-color: #c7c7c7;"></div>
+                            <div class="h-3 w-3 rounded-full" style="background-color: #4693aa;"></div>
+                        </div>
+                        <div class=" py-8 mx-auto relative px-5 overflow-hidden" style="width: 300px; height: 370px;">
+                            <div class="cardItem relative items-center">
+                                <div class="py-2 px-8 flex text-xs text-center text-gray-900 justify-items-center gap-2 hover:text-300"
+                                    style="color: #6f6c80;">
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">XS</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">S</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">M</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">XL</a>
+                                    </div>
+                                </div>
+                                <div class="flex justify-center gap-6 py-12 text-orange-600">
+                                    <div class="w-12 h-12 bg-orange-100 rounded-full">
+                                        <i class="fa fas fa-heart flex justify-center justify-items-center text-2xl py-2"></i>
+                                    </div>
+                                    <div class="w-12 h-12 bg-orange-100 rounded-full">
+                                        <i class="fa-solid fa fa-eye flex justify-center justify-items-center text-2xl py-2"></i>
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <button
+                                        class="w-56 mx-auto text-white text-center justify-items-center align-items-center flex w-10 h-10 rounded-full"
+                                        style="background-color: #e6731b;">
+                                        <i class="fa fa-shopping-cart font-icons text-white text-2xl py-1 pl-6"></i>
+                                        <p class="text-center py-2 px-8">Add to Cart</p>
+                                    </button>
+                                </div>
+                            </div>
+                            <img src="https://picsum.photos/300/350" class="rounded-sm object-cover img-contain"
+                                style="max-width: 100%; max-height: 100%;" alt="">
+                        </div>
+                        <button class="w-20 h-10 absolute bottom-0 mb-6 text-white px-6 text-sm"
+                            style="background-color:#7d7a8cc9">-$ 50</button>
                     </div>
-                    <div class="flex justify-center items-center gap-x-3 pt-3">
-                        <div class="h-3 w-3 rounded-full" style="background-color: #545454;"></div>
-                        <div class="h-3 w-3 rounded-full" style="background-color: #7d7d7d;"></div>
-                        <div class="h-3 w-3 rounded-full" style="background-color: #c7c7c7;"></div>
-                        <div class="h-3 w-3 rounded-full" style="background-color: #4693aa;"></div>
+                </div>
+                <div class="bg-white cards flex flex-col rounded-lg shadow-lg">
+                    <div class="relative">
+                        <p class="pt-8 pb-2 text-center">Lace V-neck Dress</p>
+                        <p class="font-bold pb-2 text-center">$234</p>
+                        <div class="flex justify-center gap-x-1">
+                            <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
+                        </div>
+                        <div class="flex justify-center items-center gap-x-3 pt-3">
+                            <div class="h-3 w-3 rounded-full" style="background-color: #545454;"></div>
+                            <div class="h-3 w-3 rounded-full" style="background-color: #7d7d7d;"></div>
+                            <div class="h-3 w-3 rounded-full" style="background-color: #c7c7c7;"></div>
+                            <div class="h-3 w-3 rounded-full" style="background-color: #4693aa;"></div>
+                        </div>
+                        <div class=" py-8 mx-auto relative px-5 overflow-hidden" style="width: 300px; height: 370px;">
+                            <div class="cardItem relative items-center">
+                                <div class="py-2 px-8 flex text-xs text-center text-gray-900 justify-items-center gap-2 hover:text-300"
+                                    style="color: #6f6c80;">
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">XS</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">S</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">M</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">XL</a>
+                                    </div>
+                                </div>
+                                <div class="flex justify-center gap-6 py-12 text-orange-600">
+                                    <div class="w-12 h-12 bg-orange-100 rounded-full">
+                                        <i class="fa fas fa-heart flex justify-center justify-items-center text-2xl py-2"></i>
+                                    </div>
+                                    <div class="w-12 h-12 bg-orange-100 rounded-full">
+                                        <i class="fa-solid fa fa-eye flex justify-center justify-items-center text-2xl py-2"></i>
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <button
+                                        class="w-56 mx-auto text-white text-center justify-items-center align-items-center flex w-10 h-10 rounded-full"
+                                        style="background-color: #e6731b;">
+                                        <i class="fa fa-shopping-cart font-icons text-white text-2xl py-1 pl-6"></i>
+                                        <p class="text-center py-2 px-8">Add to Cart</p>
+                                    </button>
+                                </div>
+                            </div>
+                            <img src="https://picsum.photos/300/350" class="rounded-sm object-cover img-contain"
+                                style="max-width: 100%; max-height: 100%;" alt="">
+                        </div>
+                        <button class="w-20 h-10 absolute bottom-0 mb-6 text-white px-6 text-sm"
+                            style="background-color:#7d7a8cc9">-$ 50</button>
                     </div>
-                    <div class="py-8 mx-auto relative px-5">
-                        <img src="https://picsum.photos/300/350" class="rounded-sm object-cover h-full" alt="">
-                        <button class="w-20 h-10 absolute bottom-0 mb-8 text-white" style="background-color: #706478;">-$50</button>
+                </div>
+                <div class="bg-white cards flex flex-col rounded-lg shadow-lg">
+                    <div class="relative">
+                        <p class="pt-8 pb-2 text-center">Lace V-neck Dress</p>
+                        <p class="font-bold pb-2 text-center">$234</p>
+                        <div class="flex justify-center gap-x-1">
+                            <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
+                        </div>
+                        <div class="flex justify-center items-center gap-x-3 pt-3">
+                            <div class="h-3 w-3 rounded-full" style="background-color: #545454;"></div>
+                            <div class="h-3 w-3 rounded-full" style="background-color: #7d7d7d;"></div>
+                            <div class="h-3 w-3 rounded-full" style="background-color: #c7c7c7;"></div>
+                            <div class="h-3 w-3 rounded-full" style="background-color: #4693aa;"></div>
+                        </div>
+                        <div class=" py-8 mx-auto relative px-5 overflow-hidden" style="width: 300px; height: 370px;">
+                            <div class="cardItem relative items-center">
+                                <div class="py-2 px-8 flex text-xs text-center text-gray-900 justify-items-center gap-2 hover:text-300"
+                                    style="color: #6f6c80;">
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">XS</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">S</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">M</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">XL</a>
+                                    </div>
+                                </div>
+                                <div class="flex justify-center gap-6 py-12 text-orange-600">
+                                    <div class="w-12 h-12 bg-orange-100 rounded-full">
+                                        <i class="fa fas fa-heart flex justify-center justify-items-center text-2xl py-2"></i>
+                                    </div>
+                                    <div class="w-12 h-12 bg-orange-100 rounded-full">
+                                        <i class="fa-solid fa fa-eye flex justify-center justify-items-center text-2xl py-2"></i>
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <button
+                                        class="w-56 mx-auto text-white text-center justify-items-center align-items-center flex w-10 h-10 rounded-full"
+                                        style="background-color: #e6731b;">
+                                        <i class="fa fa-shopping-cart font-icons text-white text-2xl py-1 pl-6"></i>
+                                        <p class="text-center py-2 px-8">Add to Cart</p>
+                                    </button>
+                                </div>
+                            </div>
+                            <img src="https://picsum.photos/300/350" class="rounded-sm object-cover img-contain"
+                                style="max-width: 100%; max-height: 100%;" alt="">
+                        </div>
+                        <button class="w-20 h-10 absolute bottom-0 mb-6 text-white px-6 text-sm"
+                            style="background-color:#7d7a8cc9">-$ 50</button>
+                    </div>
+                </div>
+                <div class="bg-white cards flex flex-col rounded-lg shadow-lg">
+                    <div class="relative">
+                        <p class="pt-8 pb-2 text-center">Lace V-neck Dress</p>
+                        <p class="font-bold pb-2 text-center">$234</p>
+                        <div class="flex justify-center gap-x-1">
+                            <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
+                        </div>
+                        <div class="flex justify-center items-center gap-x-3 pt-3">
+                            <div class="h-3 w-3 rounded-full" style="background-color: #545454;"></div>
+                            <div class="h-3 w-3 rounded-full" style="background-color: #7d7d7d;"></div>
+                            <div class="h-3 w-3 rounded-full" style="background-color: #c7c7c7;"></div>
+                            <div class="h-3 w-3 rounded-full" style="background-color: #4693aa;"></div>
+                        </div>
+                        <div class=" py-8 mx-auto relative px-5 overflow-hidden" style="width: 300px; height: 370px;">
+                            <div class="cardItem relative items-center">
+                                <div class="py-2 px-8 flex text-xs text-center text-gray-900 justify-items-center gap-2 hover:text-300"
+                                    style="color: #6f6c80;">
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">XS</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">S</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">M</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">XL</a>
+                                    </div>
+                                </div>
+                                <div class="flex justify-center gap-6 py-12 text-orange-600">
+                                    <div class="w-12 h-12 bg-orange-100 rounded-full">
+                                        <i class="fa fas fa-heart flex justify-center justify-items-center text-2xl py-2"></i>
+                                    </div>
+                                    <div class="w-12 h-12 bg-orange-100 rounded-full">
+                                        <i class="fa-solid fa fa-eye flex justify-center justify-items-center text-2xl py-2"></i>
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <button
+                                        class="w-56 mx-auto text-white text-center justify-items-center align-items-center flex w-10 h-10 rounded-full"
+                                        style="background-color: #e6731b;">
+                                        <i class="fa fa-shopping-cart font-icons text-white text-2xl py-1 pl-6"></i>
+                                        <p class="text-center py-2 px-8">Add to Cart</p>
+                                    </button>
+                                </div>
+                            </div>
+                            <img src="https://picsum.photos/300/350" class="rounded-sm object-cover img-contain"
+                                style="max-width: 100%; max-height: 100%;" alt="">
+                        </div>
+                        <button class="w-20 h-10 absolute bottom-0 mb-6 text-white px-6 text-sm"
+                            style="background-color:#7d7a8cc9">-$ 50</button>
+                    </div>
+                </div>
+                <div class="bg-white cards flex flex-col rounded-lg shadow-lg">
+                    <div class="relative">
+                        <p class="pt-8 pb-2 text-center">Lace V-neck Dress</p>
+                        <p class="font-bold pb-2 text-center">$234</p>
+                        <div class="flex justify-center gap-x-1">
+                            <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
+                        </div>
+                        <div class="flex justify-center items-center gap-x-3 pt-3">
+                            <div class="h-3 w-3 rounded-full" style="background-color: #545454;"></div>
+                            <div class="h-3 w-3 rounded-full" style="background-color: #7d7d7d;"></div>
+                            <div class="h-3 w-3 rounded-full" style="background-color: #c7c7c7;"></div>
+                            <div class="h-3 w-3 rounded-full" style="background-color: #4693aa;"></div>
+                        </div>
+                        <div class=" py-8 mx-auto relative px-5 overflow-hidden" style="width: 300px; height: 370px;">
+                            <div class="cardItem relative items-center">
+                                <div class="py-2 px-8 flex text-xs text-center text-gray-900 justify-items-center gap-2 hover:text-300"
+                                    style="color: #6f6c80;">
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">XS</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">S</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">M</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">XL</a>
+                                    </div>
+                                </div>
+                                <div class="flex justify-center gap-6 py-12 text-orange-600">
+                                    <div class="w-12 h-12 bg-orange-100 rounded-full">
+                                        <i class="fa fas fa-heart flex justify-center justify-items-center text-2xl py-2"></i>
+                                    </div>
+                                    <div class="w-12 h-12 bg-orange-100 rounded-full">
+                                        <i class="fa-solid fa fa-eye flex justify-center justify-items-center text-2xl py-2"></i>
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <button
+                                        class="w-56 mx-auto text-white text-center justify-items-center align-items-center flex w-10 h-10 rounded-full"
+                                        style="background-color: #e6731b;">
+                                        <i class="fa fa-shopping-cart font-icons text-white text-2xl py-1 pl-6"></i>
+                                        <p class="text-center py-2 px-8">Add to Cart</p>
+                                    </button>
+                                </div>
+                            </div>
+                            <img src="https://picsum.photos/300/350" class="rounded-sm object-cover img-contain"
+                                style="max-width: 100%; max-height: 100%;" alt="">
+                        </div>
+                        <button class="w-20 h-10 absolute bottom-0 mb-6 text-white px-6 text-sm"
+                            style="background-color:#7d7a8cc9">-$ 50</button>
+                    </div>
+                </div>
+                <div class="bg-white cards flex flex-col rounded-lg shadow-lg">
+                    <div class="relative">
+                        <p class="pt-8 pb-2 text-center">Lace V-neck Dress</p>
+                        <p class="font-bold pb-2 text-center">$234</p>
+                        <div class="flex justify-center gap-x-1">
+                            <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
+                        </div>
+                        <div class="flex justify-center items-center gap-x-3 pt-3">
+                            <div class="h-3 w-3 rounded-full" style="background-color: #545454;"></div>
+                            <div class="h-3 w-3 rounded-full" style="background-color: #7d7d7d;"></div>
+                            <div class="h-3 w-3 rounded-full" style="background-color: #c7c7c7;"></div>
+                            <div class="h-3 w-3 rounded-full" style="background-color: #4693aa;"></div>
+                        </div>
+                        <div class=" py-8 mx-auto relative px-5 overflow-hidden" style="width: 300px; height: 370px;">
+                            <div class="cardItem relative items-center">
+                                <div class="py-2 px-8 flex text-xs text-center text-gray-900 justify-items-center gap-2 hover:text-300"
+                                    style="color: #6f6c80;">
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">XS</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">S</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">M</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">XL</a>
+                                    </div>
+                                </div>
+                                <div class="flex justify-center gap-6 py-12 text-orange-600">
+                                    <div class="w-12 h-12 bg-orange-100 rounded-full">
+                                        <i class="fa fas fa-heart flex justify-center justify-items-center text-2xl py-2"></i>
+                                    </div>
+                                    <div class="w-12 h-12 bg-orange-100 rounded-full">
+                                        <i class="fa-solid fa fa-eye flex justify-center justify-items-center text-2xl py-2"></i>
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <button
+                                        class="w-56 mx-auto text-white text-center justify-items-center align-items-center flex w-10 h-10 rounded-full"
+                                        style="background-color: #e6731b;">
+                                        <i class="fa fa-shopping-cart font-icons text-white text-2xl py-1 pl-6"></i>
+                                        <p class="text-center py-2 px-8">Add to Cart</p>
+                                    </button>
+                                </div>
+                            </div>
+                            <img src="https://picsum.photos/300/350" class="rounded-sm object-cover img-contain"
+                                style="max-width: 100%; max-height: 100%;" alt="">
+                        </div>
+                        <button class="w-20 h-10 absolute bottom-0 mb-6 text-white px-6 text-sm"
+                            style="background-color:#7d7a8cc9">-$ 50</button>
+                    </div>
+                </div>
+                <div class="bg-white cards flex flex-col rounded-lg shadow-lg">
+                    <div class="relative">
+                        <p class="pt-8 pb-2 text-center">Lace V-neck Dress</p>
+                        <p class="font-bold pb-2 text-center">$234</p>
+                        <div class="flex justify-center gap-x-1">
+                            <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#ee726b ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
+                            <i class="fa-solid fa fa-star text-sm" style="color:#6f6c80 ;"></i>
+                        </div>
+                        <div class="flex justify-center items-center gap-x-3 pt-3">
+                            <div class="h-3 w-3 rounded-full" style="background-color: #545454;"></div>
+                            <div class="h-3 w-3 rounded-full" style="background-color: #7d7d7d;"></div>
+                            <div class="h-3 w-3 rounded-full" style="background-color: #c7c7c7;"></div>
+                            <div class="h-3 w-3 rounded-full" style="background-color: #4693aa;"></div>
+                        </div>
+                        <div class=" py-8 mx-auto relative px-5 overflow-hidden" style="width: 300px; height: 370px;">
+                            <div class="cardItem relative items-center">
+                                <div class="py-2 px-8 flex text-xs text-center text-gray-900 justify-items-center gap-2 hover:text-300"
+                                    style="color: #6f6c80;">
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">XS</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">S</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">M</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center text-gray-900 h-8 w-8 hover:bg-orange-300 border-2 border-gray-900">
+                                        <a href="#">XL</a>
+                                    </div>
+                                </div>
+                                <div class="flex justify-center gap-6 py-12 text-orange-600">
+                                    <div class="w-12 h-12 bg-orange-100 rounded-full">
+                                        <i class="fa fas fa-heart flex justify-center justify-items-center text-2xl py-2"></i>
+                                    </div>
+                                    <div class="w-12 h-12 bg-orange-100 rounded-full">
+                                        <i class="fa-solid fa fa-eye flex justify-center justify-items-center text-2xl py-2"></i>
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <button
+                                        class="w-56 mx-auto text-white text-center justify-items-center align-items-center flex w-10 h-10 rounded-full"
+                                        style="background-color: #e6731b;">
+                                        <i class="fa fa-shopping-cart font-icons text-white text-2xl py-1 pl-6"></i>
+                                        <p class="text-center py-2 px-8">Add to Cart</p>
+                                    </button>
+                                </div>
+                            </div>
+                            <img src="https://picsum.photos/300/350" class="rounded-sm object-cover img-contain"
+                                style="max-width: 100%; max-height: 100%;" alt="">
+                        </div>
+                        <button class="w-20 h-10 absolute bottom-0 mb-6 text-white px-6 text-sm"
+                            style="background-color:#7d7a8cc9">-$ 50</button>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- content page -->
+        <div class="flex justify-end mb-16">
+            <div class="flex gap-6">
+                <p class="text-base text-gray-400 py-1">Page 1 of 4</p>
+                <div class="flex justify-center items-center text-center w-8 h-8 rounded-full text-white"
+                    style="background-color: #706478;">
+                    <button><i class="fa fa-chevron-left"></i></button>
+                </div>
+                <div class="flex gap-3 text-center text-sm" id="pagination">
+                    <button
+                        class="pagination-btn py-1 w-8 h-8 hover:bg-orange-300 hover:text-white text-gray-400 border-2 border-gray-300 rounded-full">1</button>
+                    <button
+                        class="pagination-btn active py-1 w-8 h-8 hover:bg-orange-300 hover:text-white text-gray-400 border-2 border-gray-300 rounded-full">2</button>
+                    <button
+                        class="pagination-btn py-1 w-8 h-8 hover:bg-orange-300 hover:text-white text-gray-400 border-2 border-gray-300 rounded-full">3</button>
+                    <button
+                        class="pagination-btn py-1 w-8 h-8 hover:bg-orange-300 hover:text-white text-gray-400 border-2 border-gray-300 rounded-full">4</button>
+                </div>
+                <div class="flex justify-center items-center text-center w-8 h-8 rounded-full text-white"
+                    style="background-color: #706478;">
+                    <button><i class="fa-solid fa fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+        </div>
     </div>
-    <div class="bg-white  pt-16 pb-6">
+    <div class="bg-white pt-16 pb-6">
         <div class="container-default" style="width:1150px ;">
             <!-- footer -->
             <div class="flex gap-x-16">
@@ -386,9 +1108,10 @@
                             <div class="absolute w-64 h-1" style="background-color:#7d7d7d;"></div>
                         </div>
                         <div class="w3/4 justify-center items-center py-4">
-                        <div class="text-center my-4 py-1 px-2 h-8 w-8 rounded-full" style="background-color: #ec7869;">
-                            <i class="fa fa-arrow-right text-white text-base shadow-lg"></i>
-                        </div>
+                            <div class="text-center my-4 py-1 px-2 h-8 w-8 rounded-full"
+                                style="background-color: #ec7869;">
+                                <i class="fa fa-arrow-right text-white text-base shadow-lg"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="relative my-6">
@@ -448,24 +1171,28 @@
                             <p>CONTACT US</p>
                             <div class="absolute bottom-0 left-0 w-5 bg-orange-300 h-1"></div>
                         </div>
-                        <div class="text-base px-4">
+                        <div class="text-base">
                             <p class="py-1">
                                 <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
                                 <a href="#">JuaraganTemplate@gmail.com</a>
                             </p>
                             <p class="py-1">
                                 <a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
-                                <a href="#"><p>0123456789</p></a>
+                                <a href="#">
+                                    <p>0123456789</p>
+                                </a>
                             </p>
                             <p class="py-1">
                                 <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
-                                <a href="#"><p>Jl.JakartaSelatan</p></a>
+                                <a href="#">
+                                    <p>Jl.JakartaSelatan</p>
+                                </a>
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <hr class="my-6 border-b-2"/>
+            <hr class="my-6 border-b-2" />
             <div class="justify-between flex">
                 <div class="text-2xl grid grid-cols-4 gap-3">
                     <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -482,5 +1209,21 @@
     </div>
 
 </body>
+<script src="js/dropdown.js"></script>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+</script>
 
 </html>
